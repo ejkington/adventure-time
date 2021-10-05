@@ -1,4 +1,5 @@
 import time
+import random
 
 """
 Start of game asking players if they want too play.
@@ -8,7 +9,12 @@ if yes players is asked to state their name and the game continues.
 if the input is not yes or no,
 player is asked too try again and returned and asked the question again
 """
+# Grabable object
 
+butchers_knife = 0
+
+#Cutting down on duplication
+required = ("Wrong input try again \n")
 
 def start():
     print("Hello and welcome to Morbidus castle")
@@ -29,7 +35,7 @@ def start():
         print("Thats too bad, hope too see you another day.")
 
     else:
-        print("Wrong input try again!")
+        print(required)
         time.sleep(2)
         start()
 
@@ -98,8 +104,7 @@ def prison2():
         print("")
 
     else:
-        print("Wrong input try again")
-        time.sleep(2)
+        print(required)
         print("wait or struggle?")
         prison2()
 
@@ -111,7 +116,7 @@ def prison3():
     answer_2_2 = input(">").lower()
 
     if "attack" in answer_2_2:
-        hej()
+        fight1()
 
     elif "hide" in answer_2_2:
         print("The man is sees you hiding he takes out a butchers knife")
@@ -127,10 +132,18 @@ def prison3():
         play_again1()
 
     else:
-        print("Wrong input try again!")
+        print(required)
         print("Hide or Attack?")
         prison3()
 
+
+def fight1():
+    time.sleep(2)
+    print("You attack the man, the man turns too you and you are now in a clinch")
+    time.sleep(2)
+    print("the man reaches for his butcher knife")
+    time.sleep(2)
+    
 
 # Asks player if they want to play again when game is lost.
 
@@ -146,7 +159,7 @@ def play_again1():
         print("See you some other time!")
 
     else:
-        print("Wrong input try again")
+        print(required)
         play_again1()
  
     """
