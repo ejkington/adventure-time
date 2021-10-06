@@ -11,10 +11,11 @@ player is asked too try again and returned and asked the question again
 """
 # Grabable object
 
-butchers_knife = 0
+sword = 0
 
 #Cutting down on duplication
 required = ("Wrong input try again \n")
+
 
 def start():
     print("Hello and welcome to Morbidus castle")
@@ -65,7 +66,8 @@ def prison():
     time.sleep(2)
     prison2()
 
-# second prison scene
+# second prison scene player is asked to struggle or to wait
+# if wrong input player is asked to try again and sent back to input field
 
 
 def prison2():
@@ -108,7 +110,8 @@ def prison2():
         print("wait or struggle?")
         prison2()
 
-# third scene prison
+# third scene prison players is asked to attack or to hide
+# if wrong input player is asked to try again and sent back to input field
 
 
 def prison3():
@@ -143,7 +146,56 @@ def fight1():
     time.sleep(2)
     print("the man reaches for his butcher knife")
     time.sleep(2)
+    print("you grab his hand to try to stop him")
+    time.sleep(2)
+    print("the man is stronger than you and pushes you of")
+    time.sleep(2)
+    print("you fall backwards in the corner of the room on the floor there is a small sword")
+    time.sleep(2)
+    print("do you grab the sword ?")
+    time.sleep(2)
+    print("Yes / No")
+    choice()
     
+
+def choice():
+    answer_3_1 = input(">").lower()
+    time.sleep(2)
+    
+    # player choose to pick up sword of leave it.
+    
+    if "yes" in answer_3_1:
+        sword = 1
+        fight2()
+    
+    elif "no" in answer_3_1:
+        sword = 0
+        fight2()
+    else:
+        print(required)
+        print("Yes / No")
+        choice()
+
+
+def fight2():
+    
+    if sword > 0:
+        print("You grab the word and point it at the man")
+        time.sleep(2)
+        print("the man runs in full force and the sword pierces him to the bottom")
+        time.sleep(2)
+        print("the man falls down on the ground and wispers")
+        time.sleep(2)
+        print("GET OUT OF HERE!")
+        time.sleep(2)
+        win()
+    else:
+        print("you dident pick up the sword and are now defenseless")
+        time.sleep(2)
+        print("the man makes quit work of your life and you...")
+        time.sleep(2)
+        print("DIE")
+        play_again1()
 
 # Asks player if they want to play again when game is lost.
 
@@ -161,7 +213,17 @@ def play_again1():
     else:
         print(required)
         play_again1()
+        
+# if player wins the game
+
+
+def win():
+    print("You won the game!")
+    time.sleep(2)
+    print("have a cookie")
+    play_again1()
  
+    
     """
     Calls the start function
     """
