@@ -1,5 +1,4 @@
 import time
-import random
 
 """
 Start of game asking players if they want too play.
@@ -13,7 +12,7 @@ player is asked too try again and returned and asked the question again
 
 sword = 0
 
-#Cutting down on duplication
+# Cutting down on duplication
 required = ("Wrong input try again \n")
 
 
@@ -103,7 +102,10 @@ def prison2():
         print("he takes a hold of your arm and takes out a butchers knife")
         time.sleep(2)
         print("What do you do?")
-        print("")
+        time.sleep(2)
+        print("try to stop him")
+        time.sleep(2)
+        print("attack him")
 
     else:
         print(required)
@@ -166,27 +168,23 @@ def choice():
     
     if "yes" in answer_3_1:
         sword = 1
-        fight2()
-    
+       
     elif "no" in answer_3_1:
         sword = 0
-        fight2()
+        
     else:
         print(required)
         print("Yes / No")
         choice()
-
-
-def fight2():
     
     if sword > 0:
         print("You grab the word and point it at the man")
         time.sleep(2)
         print("the man runs in full force and the sword pierces him to the bottom")
         time.sleep(2)
-        print("the man falls down on the ground and wispers")
+        print("the man falls down on the ground and screams")
         time.sleep(2)
-        print("GET OUT OF HERE!")
+        print("GET OUT OF HERE!" + name)
         time.sleep(2)
         win()
     else:
@@ -196,11 +194,15 @@ def fight2():
         time.sleep(2)
         print("DIE")
         play_again1()
+            
 
 # Asks player if they want to play again when game is lost.
 
 
 def play_again1():
+    print("Do you want to play again ?")
+    time.sleep(1)
+    print("Yes / No")
 
     play_again = input(">").lower()
 
@@ -223,7 +225,6 @@ def win():
     print("have a cookie")
     play_again1()
  
-    
     """
     Calls the start function
     """
