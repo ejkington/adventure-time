@@ -99,18 +99,56 @@ def prison2():
         time.sleep(2)
         print("the man goes up to you, hes clothes is covered in blood")
         time.sleep(2)
-        print("he takes a hold of your arm and takes out a butchers knife")
+        print("he takes a hold of your arm")
         time.sleep(2)
         print("What do you do?")
         time.sleep(2)
-        print("try to stop him")
+        print("try to run away")
         time.sleep(2)
         print("attack him")
+        time.sleep(2)
+        print("Attack or run")
+        prison4()
 
     else:
         print(required)
         print("wait or struggle?")
         prison2()
+        
+    
+def prison4():
+    
+    answer_2_3 = input(">").lower()
+        
+    if "attack" in answer_2_3:
+        fight1()
+        
+    elif "run" in answer_2_3:
+        runaway()
+    
+    else:
+        print(required)
+        time.sleep(2)
+        print("attack or run")
+        prison4()
+        
+
+def runaway():
+    print("The door is open and you make a run for it")
+    time.sleep(2)
+    print("you get out and run down a long hallway its dark and you can barley see")
+    time.sleep(2)
+    print("the end of the hallway is a dead end but you can feel a sharp object leaning against the wall. ")
+    time.sleep(2)
+    print("the man in running towards you")
+    time.sleep(2)
+    time.sleep(2)
+    print("by the feel of it you think the object is a sword")
+    time.sleep(2)
+    print("do you grab the sword ?")
+    time.sleep(2)
+    print("Yes / No")
+    choice()
 
 # third scene prison players is asked to attack or to hide
 # if wrong input player is asked to try again and sent back to input field
@@ -159,6 +197,10 @@ def fight1():
     print("Yes / No")
     choice()
     
+    """
+    checks if player choose to pick up the sword
+    """
+
 
 def choice():
     answer_3_1 = input(">").lower()
@@ -178,13 +220,13 @@ def choice():
         choice()
     
     if sword > 0:
-        print("You grab the word and point it at the man")
+        print("You grab the sword and point it at the man")
         time.sleep(2)
-        print("the man runs in full force and the sword pierces him to the bottom")
+        print("the man runs in full force and the sword pierces him")
         time.sleep(2)
         print("the man falls down on the ground and screams")
         time.sleep(2)
-        print("GET OUT OF HERE!" + name)
+        print("GET OUT OF HERE!")
         time.sleep(2)
         win()
     else:
@@ -220,9 +262,14 @@ def play_again1():
 
 
 def win():
-    print("You won the game!")
     time.sleep(2)
-    print("have a cookie")
+    print("you made it")
+    time.sleep(2)
+    print("you have escaped the man")
+    time.sleep(2)
+    print("for now..........")
+    time.sleep(2)
+    print("TO BE CONTINUED.")
     play_again1()
  
     """
