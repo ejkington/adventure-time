@@ -6,12 +6,41 @@ the game is a horror/action text adventure set in a dungeon / prison,
 The game is build so that players can take on the challange of surviving and gets to make their own path thru the game based on their choices
 the games output will change.
 
+## Target audience
+
+Anyone who enjoys a simple text based adventure,
+
+
 ## Features
 
 The game is 100% text based made with python. and is intended to get players to interact and have som fun
 the choices the player makes has impact on how the story is driven forward, and if the player makes the wrong choices they are punished.
 After the player has made the wrong choice and the game ends there is an option to choose to play again from the start, and with each playtru the player can step by step get closer to the goal and win the game.
 
+## User stories
+
+### As a developer:
+
+• I want to provide the user with a simple but enjoyable game
+
+• I want to create an immersive story causing the user to feel weight to each choice being made.
+
+• I want to provide the user with clear gameplay instructions.
+ 
+
+### As a new user:
+
+• I want to understand how the game works 
+
+• I want the game to set the scene drawing me into the story
+
+• I want the choices being made to feel like they have consequences
+
+• I want the game to have a compelling story
+
+• I want the game to establish a clear win or lose protocol, in the form of survival or death
+
+• Once the game is completed, I want an option to play again
 
 ### Existing features
 
@@ -23,57 +52,160 @@ all chooices have clear indications on what input has to made to proggress in th
 Between every print statement there is a time.sleep(2) that gives the player a little breathing room in between text,
 of 2 seconds
 
-![Image of start of game]
+## Features to be added  
 
-- __Start of game__
+•	The option for the user to save their outcome which can be carried over to later sequels
 
-- The start gives player a welcome message and ask if they want to play,
-- if player chooses yes the game continues and asks the player to state their name, and a greating if Hello + name is printed,
-- if no the message "Thats too bad, hope too see you another day" is printed and the game stops,
-- if the player provides wrong input the message "Wrong input try again" is printed and the player gets sent back to start of game again.
+•	Add more choices and more content,
 
-![Image of prison scene]
+•  More complex system for items and grabable objects (inventory for player) (more stuff to interact with in the game)
 
-- __First_prison__
+## How to play
 
-- The first scene is printed
-- "You wake up in a dark room your hands and feets are tied to a bed"
-   "you dont remember how you got there"
-   "you hear sounds of foot steps comming closer.
-   "What do you do?
-   "Try too struggle too get your hands free.
-   "Lay still and wait.
+The game begins with instructions to the user to simply survive, followed by the question if they want to proceed with the game. 
+
+## Data Model
+
+Lucid Charts was used to create a flow chart for the text adventure
+
+## Functions
+
+The game will progress with use of functions. Functions of individual chapters will trigger story progression. Giving the user opportunity to interact with objects. Each function will end when the user is faced  with another choice to make to continue the story.
+
+## Choices
+
+Each choice will consist of two options representing two different paths the user can take.
+Once the story comes to an end whether it be successful or not the user will be asked whether they would like to play again. 
+Selecting yes restarts the game. 
+
+## Invalid input checks
+
+During each choice if the user’s input is invalid, they will be prompted to try again
+
+## Technologies used
+
+•	Python
+
+•	Heroku
+
+•	GitHub
+
+•	Gitpod
+
+•	Lucid Charts
+
+## Testing
+
+### Functionality testing
+
+I have manually tested this project by doing the following:
+
+•	Played all possible choices and outcomes to ensure all functions work correctly.
+
+•	Given invalid options.
+
+•	Tested in my local terminal and Heroku terminal.
+
+## User stories testing
+
+### As developer:
+
+• I want to provide the user with a simple but enjoyable game
+
+The simple mechanics of the game allow the user to shape the story by typing their answers when prompted 
+
+• I want to provide the user with clear gameplay instructions
+
+The user is prompted when and what to input to progress the story
+
+
+### As a new user:
+
+• I want to understand how the game works 
+
+The user is prompted when and what to input to progress the story
+
+• I want the game to effectively set the scene
+
+• Once the game is completed, I want an option to play again
    
-   "Wait or Struggle?". this is the next choice for the player
-   in between every print statment there is a time.sleep that gives the player sometime to read the text before the next line of text is provided.
-   after the scene has been printed the game continues with 
-   prison2 function
-   
-   ![Image of prison2 scene]
-   
-   - __Prison2__
-   
-   the scene starts with and input from the player 
-   Wait or Struggle
-   
-   
-   if struggle 
-        "You take all the streangth you have in your body to try too get lose"
-        "After a short struggle you get your hands free and can get your feets free"
-        "They sounds getting closer and the door opens.
-        "What do you do next?"
-        "Hide or attack?"
-       
-   elif wait
-       "You here the footsteps get to the room, you hear keys"
-       "the doors opens a man enters the room"
-       "the man goes up to you, hes clothes is covered in blood"
-       "he takes a hold of your arm and takes out a butchers knife"
-       "What do you do?"
-       "NOT FINISHED YET!"
-   
-   else:
-        "Wrong input try again"
-        and players gets asked the question again. until correct input is provided.
-   
+## Issues during development
+
+• Mainly misspelling or calling a function before it exists,
+
+• Had proplems implenting grabbable objects (SWORD) before i read up on how to solve it.
+
+
+### Bugs found on PEP8
+
+•	Unwanted white spaces
+
+•	Incorrect indentation
+
+•	Incorrect line spaces between functions
+
+•	Too many characters on one line
+
+### Adding and commiting files
+
+To add files to the repository take the following steps
+
+In the command line type -
+        git add .  
+        git commit -m "This is being committed"
+        git push
+
+To add all new files or modified file use " ."  - To add a single file use the pathway to the file eg .index.html  or assets/css/style.css
+When committing make sure your comments are clear about what changes have been made. 
+Pushing will send your work to the repository
+
+### Deployment 
+
+The project was deployed with the following steps
+
+* Logged into git hub
+* Clicked the "Settings" button in the menu above the Repository.
+* Scroll down the Settings page to the "GitHub Pages" Section.
+* Under "Source", click the dropdown called "None" and then select "Master Branch".
+* The page will automatically refresh, and a link displaced.  It may take some time for the link to show the website.
+* If the page will not load go down to "template" under the "source" and select a template. 
+* Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+## Deployment Heorku
+
+The project was deployed using Code Institutes mock terminal for Heroku
+
+Deployment steps:
+
+•	Fork or clone this repository.
+
+•	Ensure the Profile is in place.
+
+•	requirements.txt can be left empty as this project does not use any external libraries
+
+•	Create a new app in Heroku
+
+•	Select "New" and "Create new app"
+
+•	Name the new app and click "Create new app"
+
+•	In "Settings" select "BuildPack" and select Python and Node.js. (Python must be at the top of the list)
+
+•	Whilst still in "Settings", click "Reveal Config Vars" and input the folloing. KEY: PORT, VALUE: 8000. Nothing else is needed here as this project does not have any sensitive files
+
+•	Click on "Deploy" and select your deploy method and repository
+
+•	Click "Connect" on selected repository.
+
+•	Either choose "Enable Automatic Deploys" or "Deploy Branch" in the manual deploy section
+
+•	Heroku will now deploy the site
+
+### Design and content inspiration
+
+•	My roleplaying friends and the adventure we are curently playing
+
+## Thanks
+
+Special thank you to roleplaying Gamemaster Niklas Björk for comming up with the basis for my adventure
     
