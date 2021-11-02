@@ -10,10 +10,10 @@ player is asked too try again and returned and asked the question again
 """
 # Grabable object
 
-sword = 0
+SWORD = 0
 
 # Cutting down on duplication
-required = ("Wrong input try again \n")
+REQUIRED = ("Wrong input try again \n")
 
 
 def start():
@@ -21,7 +21,7 @@ def start():
     time.sleep(2)
     print("Are you ready too play? \n yes or no")
 
-    answer_1_1 = input(">").lower()
+    answer_1_1 = input(">").lower().strip()
 
     if "yes" in answer_1_1:
         print("Great now please state you name.")
@@ -35,7 +35,7 @@ def start():
         print("Thats too bad, hope too see you another day.")
 
     else:
-        print(required)
+        print(REQUIRED)
         time.sleep(2)
         start()
 
@@ -71,7 +71,7 @@ def prison():
 
 def prison2():
 
-    answer_2_1 = input(">").lower()
+    answer_2_1 = input(">").lower().strip()
 
     # checks for players input in second scene
     # if wrong input player gets sent
@@ -111,14 +111,14 @@ def prison2():
         prison4()
 
     else:
-        print(required)
+        print(REQUIRED)
         print("wait or struggle?")
         prison2()
         
     
 def prison4():
     
-    answer_2_3 = input(">").lower()
+    answer_2_3 = input(">").lower().strip()
         
     if "attack" in answer_2_3:
         fight1()
@@ -127,7 +127,7 @@ def prison4():
         runaway()
     
     else:
-        print(required)
+        print(REQUIRED)
         time.sleep(2)
         print("attack or run")
         prison4()
@@ -156,7 +156,7 @@ def runaway():
 
 def prison3():
 
-    answer_2_2 = input(">").lower()
+    answer_2_2 = input(">").lower().strip()
 
     if "attack" in answer_2_2:
         fight1()
@@ -175,7 +175,7 @@ def prison3():
         play_again1()
 
     else:
-        print(required)
+        print(REQUIRED)
         print("Hide or Attack?")
         prison3()
 
@@ -203,23 +203,23 @@ def fight1():
 
 
 def choice():
-    answer_3_1 = input(">").lower()
+    answer_3_1 = input(">").lower().strip()
     time.sleep(2)
     
     # player choose to pick up sword of leave it.
     
     if "yes" in answer_3_1:
-        sword = 1
+        SWORD = 1
        
     elif "no" in answer_3_1:
-        sword = 0
+        SWORD = 0
         
     else:
-        print(required)
+        print(REQUIRED)
         print("Yes / No")
         choice()
     
-    if sword > 0:
+    if SWORD > 0:
         print("You grab the sword and point it at the man")
         time.sleep(2)
         print("the man runs in full force and the sword pierces him")
@@ -232,8 +232,10 @@ def choice():
     else:
         print("you dident pick up the sword and are now defenseless")
         time.sleep(2)
-        print("the man makes quit work of your life and you...")
+        print("the man makes quit work of you and you...")
         time.sleep(2)
+        print("and you...")
+        time.sleep(4)
         print("DIE")
         play_again1()
             
@@ -246,7 +248,7 @@ def play_again1():
     time.sleep(1)
     print("Yes / No")
 
-    play_again = input(">").lower()
+    play_again = input(">").lower().strip()
 
     if "yes" in play_again:
         start()
@@ -255,7 +257,7 @@ def play_again1():
         print("See you some other time!")
 
     else:
-        print(required)
+        print(REQUIRED)
         play_again1()
         
 # if player wins the game
