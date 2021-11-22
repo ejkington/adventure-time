@@ -114,24 +114,24 @@ def prison2():
         print(REQUIRED)
         print("wait or struggle?")
         prison2()
-        
-    
+
+
 def prison4():
-    
+
     answer_2_3 = input(">").lower().strip()
-        
+
     if "attack" in answer_2_3:
         fight1()
-        
+
     elif "run" in answer_2_3:
         runaway()
-    
+
     else:
         print(REQUIRED)
         time.sleep(2)
         print("attack or run")
         prison4()
-        
+
 
 def runaway():
     print("The door is open and you make a run for it")
@@ -196,7 +196,7 @@ def fight1():
     time.sleep(2)
     print("Yes / No")
     choice()
-    
+
     """
     checks if player choose to pick up the sword
     """
@@ -205,20 +205,20 @@ def fight1():
 def choice():
     answer_3_1 = input(">").lower().strip()
     time.sleep(2)
-    
+
     # player choose to pick up sword of leave it.
-    
+
     if "yes" in answer_3_1:
         SWORD = 1
-       
+
     elif "no" in answer_3_1:
         SWORD = 0
-        
+
     else:
         print(REQUIRED)
         print("Yes / No")
         choice()
-    
+
     if SWORD > 0:
         print("You grab the sword and point it at the man")
         time.sleep(2)
@@ -238,7 +238,7 @@ def choice():
         time.sleep(4)
         print("DIE")
         play_again1()
-            
+
 
 # Asks player if they want to play again when game is lost.
 
@@ -259,7 +259,7 @@ def play_again1():
     else:
         print(REQUIRED)
         play_again1()
-        
+
 # if player wins the game
 
 
@@ -273,7 +273,7 @@ def win():
     time.sleep(2)
     print("TO BE CONTINUED.")
     play_again1()
- 
+
     """
     Calls the start function
     """
