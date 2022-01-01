@@ -64,10 +64,6 @@ of 2 seconds
 
 The game begins with instructions to the user to simply survive, followed by the question if they want to proceed with the game. 
 
-## Data Model
-
-Lucid Charts was used to create a flow chart for the text adventure
-
 ## Functions
 
 The game will progress with use of functions. Functions of individual chapters will trigger story progression. Giving the user opportunity to interact with objects. Each function will end when the user is faced  with another choice to make to continue the story.
@@ -92,7 +88,6 @@ During each choice if the user’s input is invalid, they will be prompted to tr
 
 •	Gitpod
 
-•	Lucid Charts
 
 ## Testing
 
