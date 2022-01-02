@@ -26,7 +26,7 @@ the choices the player makes has impact on how the story is driven forward, and 
 After the player has made the wrong choice and the game ends there is an option to choose to play again from the start, and with each playtru the player can step by step get closer to the goal and win the game.
 
 
-![Startscreen](#)
+![Startscreen](pp3 start screen.png)
 ## User stories
 
 ### As a developer:
