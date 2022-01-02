@@ -17,9 +17,11 @@ REQUIRED = ("Wrong input try again \n")
 
 
 def start():
-    print("Hello and welcome to Morbidus castle")
+    print("Hello and welcome to Morbidus castle \n")
     time.sleep(2)
-    print("Are you ready too play? \n yes or no")
+    
+    print("Are you ready too play? \n yes or no \n")
+   
 
     answer_1_1 = input(">").lower().strip()
 
