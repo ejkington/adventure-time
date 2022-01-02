@@ -88,6 +88,8 @@ Selecting yes restarts the game.
 
 During each choice if the user’s input is invalid, they will be prompted to try again
 
+![Startscreen](https://github.com/ejkington/adventure-time/blob/76be25d2d5e1562dde0b10918b10226a33e49645/pp3%20wrong%20input.png)
+
 ## Technologies used
 
 •	Python
