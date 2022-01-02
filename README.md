@@ -25,6 +25,8 @@ The game is 100% text based made with python. and is intended to get players to 
 the choices the player makes has impact on how the story is driven forward, and if the player makes the wrong choices they are punished.
 After the player has made the wrong choice and the game ends there is an option to choose to play again from the start, and with each playtru the player can step by step get closer to the goal and win the game.
 
+
+![Startscreen](#)
 ## User stories
 
 ### As a developer:
