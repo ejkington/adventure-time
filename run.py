@@ -13,7 +13,7 @@ player is asked too try again and returned and asked the question again
 SWORD = 0
 
 # Cutting down on duplication
-REQUIRED = ("Wrong input try again \n")
+REQUIRED = ("Wrong input try again")
 
 
 def start():
@@ -29,12 +29,12 @@ def start():
         print("Great now please state you name.\n")
         name = input()
         time.sleep(2)
-        print("Hello\n" + name)
+        print("Hello" + name)
         time.sleep(2)
         prison()
 
     elif "no" in answer_1_1:
-        print("Thats too bad, hope too see you another day.\n")
+        print("Thats too bad, hope too see you another day.")
 
     else:
         print(REQUIRED)
@@ -63,7 +63,7 @@ def prison():
     time.sleep(2)
     print("Lay still and wait. \n")
     time.sleep(2)
-    print("Wait or Struggle? \n")
+    print("Wait or Struggle?")
     time.sleep(2)
     prison2()
 
@@ -73,7 +73,7 @@ def prison():
 
 def prison2():
 
-    answer_2_1 = input(">\n").lower().strip()
+    answer_2_1 = input(">").lower().strip()
 
     # checks for players input in second scene
     # if wrong input player gets sent
@@ -89,7 +89,7 @@ def prison2():
         time.sleep(2)
         print("What do you do next? \n")
         time.sleep(2)
-        print("Hide or attack? \n")
+        print("Hide or attack?")
         time.sleep(2)
         prison3()
 
@@ -109,18 +109,18 @@ def prison2():
         time.sleep(2)
         print("attack him \n")
         time.sleep(2)
-        print("Attack or run \n")
+        print("Attack or run")
         prison4()
 
     else:
         print(REQUIRED)
-        print("wait or struggle? \n")
+        print("wait or struggle?")
         prison2()
 
 
 def prison4():
 
-    answer_2_3 = input("> \n").lower().strip()
+    answer_2_3 = input(">").lower().strip()
 
     if "attack" in answer_2_3:
         fight1()
@@ -131,7 +131,7 @@ def prison4():
     else:
         print(REQUIRED)
         time.sleep(2)
-        print("attack or run \n")
+        print("attack or run")
         prison4()
 
 
@@ -149,7 +149,7 @@ def runaway():
     time.sleep(2)
     print("do you grab the sword ? \n")
     time.sleep(2)
-    print("Yes / No \n")
+    print("Yes / No")
     choice()
 
 # third scene prison players is asked to attack or to hide
@@ -158,7 +158,7 @@ def runaway():
 
 def prison3():
 
-    answer_2_2 = input("> \n").lower().strip()
+    answer_2_2 = input(">").lower().strip()
 
     if "attack" in answer_2_2:
         fight1()
@@ -178,7 +178,7 @@ def prison3():
 
     else:
         print(REQUIRED)
-        print("Hide or Attack? \n")
+        print("Hide or Attack?")
         prison3()
 
 
@@ -205,7 +205,7 @@ def fight1():
 
 
 def choice():
-    answer_3_1 = input("> \n").lower().strip()
+    answer_3_1 = input(">").lower().strip()
     time.sleep(2)
 
     # player choose to pick up sword of leave it.
@@ -218,7 +218,7 @@ def choice():
 
     else:
         print(REQUIRED)
-        print("Yes / No \n")
+        print("Yes / No")
         choice()
 
     if SWORD > 0:
@@ -250,7 +250,7 @@ def play_again1():
     time.sleep(1)
     print("Yes / No \n")
 
-    play_again = input("> \n").lower().strip()
+    play_again = input(">").lower().strip()
 
     if "yes" in play_again:
         start()
