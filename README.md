@@ -1,3 +1,11 @@
+### Live site
+
+• https://adventuretimems3.herokuapp.com/
+
+### Github repo
+
+• https://github.com/ejkington/adventure-time
+
 # Morbidus castle
 
 This is a text based adventure based in python using the template provided by codeinstitute,
@@ -17,6 +25,8 @@ The game is 100% text based made with python. and is intended to get players to 
 the choices the player makes has impact on how the story is driven forward, and if the player makes the wrong choices they are punished.
 After the player has made the wrong choice and the game ends there is an option to choose to play again from the start, and with each playtru the player can step by step get closer to the goal and win the game.
 
+
+![Startscreen](https://github.com/ejkington/adventure-time/blob/7aadbf0d7d7b8484669e6bbd76c6fefa2a1ef863/pp3%20start%20screen.png)
 ## User stories
 
 ### As a developer:
@@ -64,10 +74,6 @@ of 2 seconds
 
 The game begins with instructions to the user to simply survive, followed by the question if they want to proceed with the game. 
 
-## Data Model
-
-Lucid Charts was used to create a flow chart for the text adventure
-
 ## Functions
 
 The game will progress with use of functions. Functions of individual chapters will trigger story progression. Giving the user opportunity to interact with objects. Each function will end when the user is faced  with another choice to make to continue the story.
@@ -82,6 +88,8 @@ Selecting yes restarts the game.
 
 During each choice if the user’s input is invalid, they will be prompted to try again
 
+![Startscreen](https://github.com/ejkington/adventure-time/blob/76be25d2d5e1562dde0b10918b10226a33e49645/pp3%20wrong%20input.png)
+
 ## Technologies used
 
 •	Python
@@ -92,7 +100,6 @@ During each choice if the user’s input is invalid, they will be prompted to tr
 
 •	Gitpod
 
-•	Lucid Charts
 
 ## Testing
 
@@ -200,6 +207,14 @@ Deployment steps:
 •	Either choose "Enable Automatic Deploys" or "Deploy Branch" in the manual deploy section
 
 •	Heroku will now deploy the site
+
+### Live site
+
+• https://adventuretimems3.herokuapp.com/
+
+### Github repo
+
+• https://github.com/ejkington/adventure-time
 
 ### Design and content inspiration
 
