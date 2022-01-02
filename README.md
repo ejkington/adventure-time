@@ -1,3 +1,11 @@
+### Live site
+
+• https://adventuretimems3.herokuapp.com/
+
+### Github repo
+
+• https://github.com/ejkington/adventure-time
+
 # Morbidus castle
 
 This is a text based adventure based in python using the template provided by codeinstitute,
@@ -195,6 +203,14 @@ Deployment steps:
 •	Either choose "Enable Automatic Deploys" or "Deploy Branch" in the manual deploy section
 
 •	Heroku will now deploy the site
+
+### Live site
+
+• https://adventuretimems3.herokuapp.com/
+
+### Github repo
+
+• https://github.com/ejkington/adventure-time
 
 ### Design and content inspiration
 
